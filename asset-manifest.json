@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/tezos-react/static/css/main.75bcd74a.chunk.css",
-    "main.js": "/tezos-react/static/js/main.a1c2cabb.chunk.js",
-    "main.js.map": "/tezos-react/static/js/main.a1c2cabb.chunk.js.map",
+    "main.js": "/tezos-react/static/js/main.f301c2ab.chunk.js",
+    "main.js.map": "/tezos-react/static/js/main.f301c2ab.chunk.js.map",
     "runtime-main.js": "/tezos-react/static/js/runtime-main.1d5d2ad9.js",
     "runtime-main.js.map": "/tezos-react/static/js/runtime-main.1d5d2ad9.js.map",
     "static/js/2.7982538e.chunk.js": "/tezos-react/static/js/2.7982538e.chunk.js",
@@ -17,24 +17,24 @@
     "static/media/Joe.273f5d10.png": "/tezos-react/static/media/Joe.273f5d10.png",
     "static/media/Sandra.166d2a18.png": "/tezos-react/static/media/Sandra.166d2a18.png",
     "static/media/SandraAlta.19ddb84b.png": "/tezos-react/static/media/SandraAlta.19ddb84b.png",
-    "static/media/__background.033d170b.png": "/tezos-react/static/media/__background.033d170b.png",
-    "static/media/__background.42ac8aec.png": "/tezos-react/static/media/__background.42ac8aec.png",
-    "static/media/__background.44c04661.png": "/tezos-react/static/media/__background.44c04661.png",
-    "static/media/__background.95386efd.png": "/tezos-react/static/media/__background.95386efd.png",
-    "static/media/__background.9ab1e507.png": "/tezos-react/static/media/__background.9ab1e507.png",
-    "static/media/__background.a6c64517.png": "/tezos-react/static/media/__background.a6c64517.png",
-    "static/media/__background.f07bb28e.png": "/tezos-react/static/media/__background.f07bb28e.png",
-    "static/media/__facebook.71a5e7e8.svg": "/tezos-react/static/media/__facebook.71a5e7e8.svg",
-    "static/media/__logo.848420e2.svg": "/tezos-react/static/media/__logo.848420e2.svg",
-    "static/media/__mark-star.920a39d3.svg": "/tezos-react/static/media/__mark-star.920a39d3.svg",
-    "static/media/__twitter.2756041d.svg": "/tezos-react/static/media/__twitter.2756041d.svg",
-    "static/media/__website.e40f495f.svg": "/tezos-react/static/media/__website.e40f495f.svg",
-    "static/media/iPhone.c20176f8.png": "/tezos-react/static/media/iPhone.c20176f8.png"
+    "static/media/background.033d170b.png": "/tezos-react/static/media/background.033d170b.png",
+    "static/media/background.42ac8aec.png": "/tezos-react/static/media/background.42ac8aec.png",
+    "static/media/background.44c04661.png": "/tezos-react/static/media/background.44c04661.png",
+    "static/media/background.95386efd.png": "/tezos-react/static/media/background.95386efd.png",
+    "static/media/background.9ab1e507.png": "/tezos-react/static/media/background.9ab1e507.png",
+    "static/media/background.a6c64517.png": "/tezos-react/static/media/background.a6c64517.png",
+    "static/media/background.f07bb28e.png": "/tezos-react/static/media/background.f07bb28e.png",
+    "static/media/facebook.71a5e7e8.svg": "/tezos-react/static/media/facebook.71a5e7e8.svg",
+    "static/media/iPhone.c20176f8.png": "/tezos-react/static/media/iPhone.c20176f8.png",
+    "static/media/logo.848420e2.svg": "/tezos-react/static/media/logo.848420e2.svg",
+    "static/media/mark-star.920a39d3.svg": "/tezos-react/static/media/mark-star.920a39d3.svg",
+    "static/media/twitter.2756041d.svg": "/tezos-react/static/media/twitter.2756041d.svg",
+    "static/media/website.e40f495f.svg": "/tezos-react/static/media/website.e40f495f.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.1d5d2ad9.js",
     "static/js/2.7982538e.chunk.js",
     "static/css/main.75bcd74a.chunk.css",
-    "static/js/main.a1c2cabb.chunk.js"
+    "static/js/main.f301c2ab.chunk.js"
   ]
 }
