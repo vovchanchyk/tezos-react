@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/tezos-react/static/css/main.75bcd74a.chunk.css",
-    "main.js": "/tezos-react/static/js/main.1ee5a926.chunk.js",
-    "main.js.map": "/tezos-react/static/js/main.1ee5a926.chunk.js.map",
-    "runtime-main.js": "/tezos-react/static/js/runtime-main.ac6f474d.js",
-    "runtime-main.js.map": "/tezos-react/static/js/runtime-main.ac6f474d.js.map",
-    "static/js/2.2c406b03.chunk.js": "/tezos-react/static/js/2.2c406b03.chunk.js",
-    "static/js/2.2c406b03.chunk.js.map": "/tezos-react/static/js/2.2c406b03.chunk.js.map",
-    "static/js/3.d7c0855c.chunk.js": "/tezos-react/static/js/3.d7c0855c.chunk.js",
-    "static/js/3.d7c0855c.chunk.js.map": "/tezos-react/static/js/3.d7c0855c.chunk.js.map",
+    "main.js": "/tezos-react/static/js/main.fcab528a.chunk.js",
+    "main.js.map": "/tezos-react/static/js/main.fcab528a.chunk.js.map",
+    "runtime-main.js": "/tezos-react/static/js/runtime-main.1d5d2ad9.js",
+    "runtime-main.js.map": "/tezos-react/static/js/runtime-main.1d5d2ad9.js.map",
+    "static/js/2.7982538e.chunk.js": "/tezos-react/static/js/2.7982538e.chunk.js",
+    "static/js/2.7982538e.chunk.js.map": "/tezos-react/static/js/2.7982538e.chunk.js.map",
+    "static/js/3.39ff22f8.chunk.js": "/tezos-react/static/js/3.39ff22f8.chunk.js",
+    "static/js/3.39ff22f8.chunk.js.map": "/tezos-react/static/js/3.39ff22f8.chunk.js.map",
     "index.html": "/tezos-react/index.html",
     "static/css/main.75bcd74a.chunk.css.map": "/tezos-react/static/css/main.75bcd74a.chunk.css.map",
-    "static/js/2.2c406b03.chunk.js.LICENSE.txt": "/tezos-react/static/js/2.2c406b03.chunk.js.LICENSE.txt",
+    "static/js/2.7982538e.chunk.js.LICENSE.txt": "/tezos-react/static/js/2.7982538e.chunk.js.LICENSE.txt",
     "static/media/Charlie.fd7f4ef0.png": "/tezos-react/static/media/Charlie.fd7f4ef0.png",
     "static/media/difference.scss": "/tezos-react/static/media/Light.4302bb8c.svg",
     "static/media/Joe.273f5d10.png": "/tezos-react/static/media/Joe.273f5d10.png",
@@ -32,9 +32,9 @@
     "static/media/__website.e40f495f.svg": "/tezos-react/static/media/__website.e40f495f.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.ac6f474d.js",
-    "static/js/2.2c406b03.chunk.js",
+    "static/js/runtime-main.1d5d2ad9.js",
+    "static/js/2.7982538e.chunk.js",
     "static/css/main.75bcd74a.chunk.css",
-    "static/js/main.1ee5a926.chunk.js"
+    "static/js/main.fcab528a.chunk.js"
   ]
 }
