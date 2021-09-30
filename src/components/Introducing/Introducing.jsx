@@ -1,6 +1,6 @@
 import React from 'react';
-import logo from "./__logo.svg";
-import background from "./__background.png";
+import logo from "./logo.svg";
+import background from "./background.png";
 import Title from '../Title/Title';
 import './introducing.scss';
 

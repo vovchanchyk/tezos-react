@@ -4,7 +4,7 @@ import DifferenceItem from './__item/DifferenceItem';
 import data from './__data';
 import Icon from '../Icon/Icon';
 import Title from '../Title/Title';
-import background from './__background.png';
+import background from './background.png';
 
 
 const Difference = ({ theme }) => {

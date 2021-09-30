@@ -1,6 +1,6 @@
 import React from 'react';
 import './primary.scss';
-import iphoneImg from './__iPhone.png';
+import iphoneImg from './iPhone.png';
 import Container from './../Container/Container';
 import Description from '../Description/Description';
 import Socials from './../Socials/Socials';

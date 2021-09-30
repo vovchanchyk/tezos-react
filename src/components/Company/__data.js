@@ -1,4 +1,4 @@
-import img from './__background.png';
+import img from './background.png';
 const data = {
   img,
   block: "company",

@@ -1,6 +1,6 @@
-import background from "./__background.png";
+import background from "./background.png";
 import logo from "./../logo/Dark.svg";
-import mark from "./__mark-star.svg";
+import mark from "./mark-star.svg";
 const data = {
     mark,
     logo,

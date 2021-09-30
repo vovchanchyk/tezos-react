@@ -1,4 +1,4 @@
-import img from './__background.png';
+import img from './background.png';
 
 import logo from './../logo/Dark.svg';
 
