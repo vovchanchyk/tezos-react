@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/tezos-react/home/static/css/main.26460c76.chunk.css",
-    "main.js": "/tezos-react/home/static/js/main.ab797cd6.chunk.js",
-    "main.js.map": "/tezos-react/home/static/js/main.ab797cd6.chunk.js.map",
+    "main.js": "/tezos-react/home/static/js/main.ce33de30.chunk.js",
+    "main.js.map": "/tezos-react/home/static/js/main.ce33de30.chunk.js.map",
     "runtime-main.js": "/tezos-react/home/static/js/runtime-main.0b1f7dfd.js",
     "runtime-main.js.map": "/tezos-react/home/static/js/runtime-main.0b1f7dfd.js.map",
-    "static/js/2.7982538e.chunk.js": "/tezos-react/home/static/js/2.7982538e.chunk.js",
-    "static/js/2.7982538e.chunk.js.map": "/tezos-react/home/static/js/2.7982538e.chunk.js.map",
+    "static/js/2.5d3e875d.chunk.js": "/tezos-react/home/static/js/2.5d3e875d.chunk.js",
+    "static/js/2.5d3e875d.chunk.js.map": "/tezos-react/home/static/js/2.5d3e875d.chunk.js.map",
     "index.html": "/tezos-react/home/index.html",
     "static/css/main.26460c76.chunk.css.map": "/tezos-react/home/static/css/main.26460c76.chunk.css.map",
-    "static/js/2.7982538e.chunk.js.LICENSE.txt": "/tezos-react/home/static/js/2.7982538e.chunk.js.LICENSE.txt",
+    "static/js/2.5d3e875d.chunk.js.LICENSE.txt": "/tezos-react/home/static/js/2.5d3e875d.chunk.js.LICENSE.txt",
     "static/media/Charlie.fd7f4ef0.png": "/tezos-react/home/static/media/Charlie.fd7f4ef0.png",
     "static/media/difference.scss": "/tezos-react/home/static/media/Light.4302bb8c.svg",
     "static/media/Joe.273f5d10.png": "/tezos-react/home/static/media/Joe.273f5d10.png",
@@ -31,8 +31,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.0b1f7dfd.js",
-    "static/js/2.7982538e.chunk.js",
+    "static/js/2.5d3e875d.chunk.js",
     "static/css/main.26460c76.chunk.css",
-    "static/js/main.ab797cd6.chunk.js"
+    "static/js/main.ce33de30.chunk.js"
   ]
 }
