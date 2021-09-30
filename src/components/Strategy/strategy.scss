@@ -1,0 +1,80 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/vars.scss';
+@import './../../stylesSrc/templates.scss';
+
+.strategy {
+  &__container {
+    display: grid;
+    grid-template-columns: minmax(320px, 1053px) 1fr;
+    max-width: 1920px;
+  }
+
+  &__left {
+    grid-area: 1/1/2/2;
+  }
+
+  &__img {
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__right {
+    grid-area: 1/1/2/3;
+    @extend %right-padding;
+    display: grid;
+    justify-items: flex-end;
+    align-content: flex-start;
+    padding-bottom: 166px;
+    @include media(1200px) {
+      justify-content: center;
+    }
+  }
+
+  &__logo {
+    @extend %logo;
+  }
+
+  &__title {
+    width: 905px;
+    margin-bottom: 76px;
+    @include media(1200px) {
+      width: 100%;
+      text-align: center
+    }
+  }
+
+  &__points {
+    width: 905px;
+    display: grid;
+    row-gap: 63px;
+    @include media(1200px) {
+      width: 100%;
+    }
+  }
+
+  &__point {
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    column-gap: 3rem;
+    @include media(540px) {
+      gap: 1rem;
+      overflow: hidden;
+    }
+    h3{
+      font-size: $f-size-2;
+      line-height: $f-height-2;
+
+    }
+    p{
+      font-size: $f-size-2;
+      line-height: $f-height-2;
+    }
+  }
+
+  &__mark {
+    grid-row: 1/3;
+  }
+
+}

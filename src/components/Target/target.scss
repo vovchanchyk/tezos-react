@@ -1,0 +1,35 @@
+@import '/src/stylesSrc/mixins.scss';
+.target {
+
+    &__img{
+      max-width: 100%;
+      object-fit: cover;
+      height: 100%;
+      @include media(1200px) {
+        width: 100%;    
+       } 
+    }
+  
+    &__title {
+      margin-bottom: 71px;
+    }
+  
+    &__points {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(auto, 458px));
+      grid-column-gap: 3.5rem;
+      width: fit-content;
+      
+      @include media(992px) {
+        grid-template-columns: 1fr;    
+      } 
+      p{
+        margin-bottom: 93px;
+      }
+    }
+
+    &__description{
+      font-weight: 700;
+      
+    }
+}

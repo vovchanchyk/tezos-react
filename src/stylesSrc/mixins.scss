@@ -1,0 +1,29 @@
+@mixin media-column($size) {
+  @media screen and (max-width: $size) {
+    grid-template-columns: 1fr;
+    text-align: center;
+    @content;
+  }
+}
+
+@mixin padding-horizontal($screen, $l, $r: $l, $mood: max) {
+  @media screen and (#{$mood}-width: $screen) {
+    padding : {
+      left: $l;
+      right: $r;
+    }
+  }
+}
+
+@mixin padding-vertical($t, $b: $t) {
+  padding : {
+    top: $t;
+    bottom: $b;
+  }
+}
+
+@mixin media($size, $mood: max) {
+  @media screen and (#{$mood}-width: $size) {
+    @content;
+  }
+}

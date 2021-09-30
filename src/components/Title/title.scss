@@ -1,0 +1,15 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/vars.scss';
+
+.title {
+    font-family: $f-family;
+    font-weight: 800;
+    font-size: $f-size-1;
+    line-height: $f-height-1;
+    color: $f-color;
+
+    @include media(540px){
+        font-size: 4rem;    
+        text-align: center;  
+    }
+}

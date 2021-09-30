@@ -1,0 +1,26 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/templates.scss';
+@import './../../stylesSrc/vars.scss';
+.introducing {
+  &__container {
+    position: relative;
+    @extend %container;
+    height: 1080px;
+    @include padding-horizontal(1600px, 40px);
+    @include padding-horizontal(540px, 20px);
+  }
+
+  &__logo {
+    @extend %logo-absolute;
+  }
+
+  &__title {
+    max-width: 1110px;
+    align-self: center;
+    color: rgba(252, 247, 247, 1);
+    text-align: center;
+    letter-spacing: 0em;
+    text-shadow:$tex-shadow;
+ 
+  }
+}

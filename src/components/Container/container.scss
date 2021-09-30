@@ -1,0 +1,24 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/templates.scss';
+.container {
+  @extend %container;
+  grid-template-columns: minmax(488px, 757px) minmax(700px, 1fr);
+  @include media-column(1200px);
+
+  &__img{
+    max-width: 100%;
+    height: 100%;
+    @include media(1200px) {
+      width: 100%;
+    }
+  }
+
+  &__right{
+    display: grid;
+    @extend %right-padding;
+    align-content: flex-start;
+  }
+  &__logo{
+    @extend %logo;
+  }
+}

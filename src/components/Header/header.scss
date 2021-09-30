@@ -1,0 +1,7 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/templates.scss';
+.header{
+    @include padding-vertical(50px);
+    @extend %right-padding;
+    position: relative;
+}

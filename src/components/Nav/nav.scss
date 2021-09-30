@@ -1,0 +1,15 @@
+@import './../../stylesSrc/mixins.scss';
+
+.nav{
+    background-color: #fff;
+    left: 0;
+    top: 100%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 1;
+    @include media(992px){
+        width: 100%;
+    }
+    
+}

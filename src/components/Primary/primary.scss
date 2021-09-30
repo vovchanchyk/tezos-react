@@ -1,0 +1,39 @@
+@import './../../stylesSrc/vars.scss';
+@import './../../stylesSrc/mixins.scss';
+.primary {
+ 
+  &__left {
+    background-color: $blue-color;
+    display: grid;
+    padding: 93px 0;
+    justify-content: center;
+  }
+
+  &__img {
+    margin: auto;
+  }
+
+  &__right {
+    padding-bottom: 93px;
+  }
+  
+  &__title {
+    margin-bottom: 53px;
+  }
+
+  &__description {
+    max-width: 894px;
+    min-height: 289px;
+    margin-bottom: 61px;
+  }
+
+  &__socials {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(340px, 430px));
+    grid-gap: 62px 0px;
+    @include media(1200px) {
+      justify-self: center;
+    }
+    @include media-column(678px);
+  }
+}

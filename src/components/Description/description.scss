@@ -1,0 +1,13 @@
+@import './../../stylesSrc/vars.scss';
+@import './../../stylesSrc/mixins.scss';
+.description {
+    font-family: $f-family;
+    font-style: normal;
+    letter-spacing: 0em;
+    color: $f-color; 
+    font-size: $f-size-2;
+    line-height: $f-height-2;
+    @include media(1200px) {
+        justify-self: center;
+      }
+}

@@ -1,0 +1,16 @@
+@import './../../stylesSrc/vars.scss';
+.nav-link{
+    font-family:$f-family;
+    color: $f-color;
+    font-size: $f-size-3;
+    line-height: $f-height-3;
+    font-weight: 700;
+    background-color: inherit;
+    padding: 15px;
+
+    &--active{
+        background-color: $f-color;
+        color: white;
+    }
+    
+}

@@ -1,0 +1,68 @@
+%container{
+    display: grid;
+    max-width: 1920px;
+    margin: auto;
+    justify-content: center;
+
+}
+
+%team{
+    max-width: 1920px;
+    display: grid;
+    margin: 0px auto 293px;
+    justify-content: center; 
+}
+
+%mission{
+    max-width: 1920px;
+    display: grid;
+    margin: 0 auto 80px;
+    justify-content: center; 
+}
+
+%Introducing {
+      max-width: 1920px;
+      display: grid;
+      margin: auto;
+      justify-content: center; 
+}
+%primary {
+      max-width: 1920px;
+      margin: auto;
+      display: grid;
+      justify-content: center;      
+    }
+
+
+
+%logo{
+    justify-self: flex-end;
+    margin: 65px 0 25px 0;
+    @media screen and (max-width:1200px){
+        justify-self: center;
+        margin-bottom: 80px;
+    }
+
+}
+
+%logo-absolute{
+    position: absolute;
+    right: 119px;
+    top: 65px;
+
+    @include media(1600px) {
+      right: 82px;
+    }
+    @include media(1200px) {
+      right: 50%;
+      transform: translate(50%);
+    }
+
+}
+
+%right-padding{
+    @include padding-horizontal(1600px, 94px, 119px, min);
+    @include padding-horizontal(1600px,74px, 82px);
+    @include padding-horizontal(1200px, 40px);
+    @include padding-horizontal(768px, 20px);
+}

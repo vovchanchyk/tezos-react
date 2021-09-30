@@ -1,0 +1,57 @@
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/vars.scss';
+@import './../../stylesSrc/templates.scss';
+.team {
+  &__container {
+    max-width: 1920px;
+    display: grid;
+    margin: 0px auto 293px;
+    padding-top: 344px;
+    position: relative;
+  }
+  &__body {
+    display: grid;
+    grid-template-columns: minmax(488px, 522px) 1fr;
+    padding-left: 140px;
+    @include media-column(1200px) {
+      row-gap: 120px;
+      padding: 0px;
+      margin-bottom: 120px;
+    }
+  }
+
+  &__left {
+    @include padding-horizontal(1200px, 40px);
+  }
+
+  &__title {
+    margin-bottom: 25px;
+  }
+
+  &__description {
+    font-size: $f-size-3;
+    line-height: $f-height-3;
+    @include media(1200px) {
+      text-align: center;
+    }
+  }
+
+  &__right {
+    display: grid;
+    @extend %right-padding;
+  }
+
+  &__logo {
+    @extend %logo-absolute;
+  }
+
+  &__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(420px, 1fr));
+    grid-gap: 60px 20px;
+    @include media-column(540px) {
+      justify-content: center;
+      grid-gap: 60px;
+    }
+  }
+}

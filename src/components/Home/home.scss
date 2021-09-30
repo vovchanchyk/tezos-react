@@ -1,0 +1,27 @@
+
+@import './../../stylesSrc/mixins.scss';
+@import './../../stylesSrc/templates.scss';
+@import './../../stylesSrc/vars.scss';
+
+.home {
+  &__right {
+    display: grid;
+    @include padding-horizontal(1600px, 50px, 119px, min);
+    @include padding-horizontal(1600px, 50px, 82px);
+    @include padding-horizontal(1200px, 40px);
+    @include padding-horizontal(768px, 20px);
+    padding-bottom: 104px;
+  }
+
+  &__title {
+    font-size: 9rem;
+    line-height: 12.27625rem;
+    margin: 222px 0 102px 0;
+    @include media(1600px) {
+      font-size: $f-size-1;
+    }
+    @include media(1200px) {
+     margin: 0 0 100px 0;
+    }
+  }
+}
