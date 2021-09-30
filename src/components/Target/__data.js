@@ -1,6 +1,5 @@
 import img from './background.png';
 
-
  const data = {
     img,
     block: "target",
