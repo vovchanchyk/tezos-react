@@ -1,5 +1,4 @@
-@import './../../stylesSrc/mixins.scss';
-@import './../../stylesSrc/vars.scss';
+@import './../../styles/index.scss';
 .teammate {
     display: grid;
     grid-template-columns: 191px minmax(min-content,316px);

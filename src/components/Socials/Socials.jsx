@@ -1,13 +1,13 @@
 import React from 'react';
-import Link from './__link/Link';
-import data from './__data';
-import './socials.scss';
+import {Link} from './Link';
+import data from './data';
+import './Socials.module.scss';
 
 
-const Socials = (props) => {
+const Socials = ({className}) => {
 
     return (
-        <ul className={`${props.block}__socials socials`}>
+        <ul className={`${className} socials`}>
             {data.map((el) => {
                 const name = el.href.slice(7) 
                 return <Link {...el} name = {name} key={el.href}/>
@@ -16,4 +16,4 @@ const Socials = (props) => {
     )
 }
 
-export default Socials
+export  {Socials};

@@ -1,10 +1,10 @@
 import React from "react";
-import NavLink from "../NavLink/NavLink";
-import "./nav.scss";
+import {NavLink} from "../NavLink";
+import styles from "./Nav.module.scss";
 
 const Nav = () => {
     return (
-        <nav className="nav">
+        <nav className={styles.nav}>
             <NavLink name="Home" path="/home" />
             <NavLink name="Company" path="/company" />
             <NavLink name="Primary" path="/primary" />
@@ -21,4 +21,4 @@ const Nav = () => {
     );
 }
 
-export default Nav;
+export {Nav};

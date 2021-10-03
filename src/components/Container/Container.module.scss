@@ -1,5 +1,4 @@
-@import './../../stylesSrc/mixins.scss';
-@import './../../stylesSrc/templates.scss';
+@import './../../styles/index.scss';
 .container {
   @extend %container;
   grid-template-columns: minmax(488px, 757px) minmax(700px, 1fr);

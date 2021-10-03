@@ -1,5 +1,5 @@
-@import './../../stylesSrc/vars.scss';
-.nav-link{
+@import './../../styles/index.scss';
+.navlink{
     font-family:$f-family;
     color: $f-color;
     font-size: $f-size-3;
@@ -8,7 +8,7 @@
     background-color: inherit;
     padding: 15px;
 
-    &--active{
+    &_active{
         background-color: $f-color;
         color: white;
     }

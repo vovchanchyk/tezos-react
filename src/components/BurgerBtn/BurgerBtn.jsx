@@ -1,13 +1,25 @@
 import React from "react";
-import "./burgerBtn.scss";
+import styles from './BurgerBtn.module.scss';
+import PropTypes from "prop-types";
 
-const BurgerBtn = (props) => {
-  const burgerClass = props.active ? "burger burger--active" : "burger";
+const BurgerBtn = ({handler, active}) => {
+
+  const burgerClass = active ? `${styles.burger} ${styles.burger_active}` : styles.burger;
   return (
-    <div className={burgerClass} onClick={props.handler}>
+    <div className={burgerClass} onClick={handler}>
       <span></span>
     </div>
   );
 };
 
-export default BurgerBtn;
+BurgerBtn.propTypes = {
+  active : PropTypes.bool,
+  handler : PropTypes.func
+}
+
+BurgerBtn.defaultProps = {
+  active : false,
+  handler : ()=>{}
+}
+
+ export { BurgerBtn };

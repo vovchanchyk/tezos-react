@@ -1,7 +1,7 @@
 import React from "react";
 import "./team.scss";
 //compnts
-import Description from "./../Description/Description";
+import {Description} from "./../Description";
 import Title from "./../Title/Title";
 
 //imgs

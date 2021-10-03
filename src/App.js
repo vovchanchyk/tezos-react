@@ -1,7 +1,6 @@
 import React from 'react';
-import './stylesSrc/app.scss';
-import Main from './components/Main/Main';
-import Header from './components/Header/Header';
+import {Main} from './components/Main';
+import {Header} from './components/Header';
 import { HashRouter as Router } from "react-router-dom";
 
 

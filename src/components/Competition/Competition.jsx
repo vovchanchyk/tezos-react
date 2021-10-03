@@ -1,28 +1,29 @@
 import React from "react";
 
-import "./competition.scss";
+import styles from "./Competition.module.scss";
 import Subsection from "../Subsection/Subsection";
 import Title from "../Title/Title";
-import data from "./__data";
+import data from "./data";
 
 const Competition = () => {
+
   return (
-    <section className="competition">
-      <div className="competition__container">
-        <img src={data.logo} alt="logo" className="competition__logo" />
-        <div className="competition__left">
-          <Title block="competition">Company Name</Title>
-          <div className="competition__points">
+    <section className={styles}>
+      <div className={styles.competition__container}>
+        <img src={data.logo} alt="logo" className={styles.competition__logo}/>
+        <div className={styles.competition__left}>
+          <Title className={styles.competition__title}>Company Name</Title>
+          <div className={styles.competition__points}>
             {data.points.map((el, i) => (
               <Subsection title={el.title + i} body={el.body} key={i} />
             ))}
           </div>
         </div>
-        <div className="competition__right">
+        <div className={styles.competition__right}>
           <img
             src={data.img}
             alt={`${data.block} img`}
-            className="competition__img"
+            className={styles.competition__img}
           />
         </div>
       </div>
@@ -30,4 +31,4 @@ const Competition = () => {
   );
 };
 
-export default Competition;
+export { Competition };
