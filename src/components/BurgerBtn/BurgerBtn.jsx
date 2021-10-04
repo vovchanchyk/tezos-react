@@ -13,7 +13,7 @@ const BurgerBtn = ({handler, active}) => {
 };
 
 BurgerBtn.propTypes = {
-  active : PropTypes.bool,
+  active : PropTypes.bool.isRequired,
   handler : PropTypes.func
 }
 
@@ -22,4 +22,4 @@ BurgerBtn.defaultProps = {
   handler : ()=>{}
 }
 
- export { BurgerBtn };
+ export  {BurgerBtn};

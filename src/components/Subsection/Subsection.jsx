@@ -1,10 +1,11 @@
 import React from 'react';
 import  styles from './Subsection.module.scss';
 import PropTypes from "prop-types";
-import styledTitle from './../Title.module.scss';
-import styledDescription from './../Description/Description.module.scss'
+import styledTitle from './../Title/Title.module.scss';
+import styledDescription from './../Description/Description.module.scss';
 
 const Subsection = ({ title, body }) => {
+ 
     return (
         <div className={styles.subsection}>
             <h3 className={`${styles.subsection__title} ${styledTitle.title}`}>{title}</h3>
@@ -20,3 +21,4 @@ Subsection.propTypes = {
     body: PropTypes.string.isRequired
   }
 export {Subsection};
+

@@ -1,12 +1,22 @@
 import React from 'react';
-import './title.scss';
+import styles from  './Title.module.scss';
+import PropTypes from "prop-types";
 
-const Title = ({className,...props}) => {
+const Title = ({className,children}) => {
     return (
-        <h2 className={`${className}  title`}>
-            {props.children}
+        <h2 className={`${className}  ${styles.title}`}>
+            {children}
         </h2>
     )
 }
 
-export default Title
+Title.propTypes = {
+    className : PropTypes.string,
+    children:PropTypes.node
+}
+Title.defaultProps={
+    className:'',
+    children:''
+}
+
+export  {Title};

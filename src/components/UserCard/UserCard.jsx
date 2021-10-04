@@ -1,7 +1,8 @@
 import React from 'react';
+import PropTypes from "prop-types";
 
-const UserCard = (props) => {
-    const { user } = props;
+const UserCard = ({user}) => {
+    
     return (
         <div style={{
             border: 'solid 1px',
@@ -14,7 +15,18 @@ const UserCard = (props) => {
         </div>
     )
 }
+UserCard.propTypes = {
+    user:PropTypes.shape({
+        name:PropTypes.string,
+        syrname:PropTypes.string
+    })
+}
 
+UserCard.defaultProps={
+    user:{
+        name:'name',
+        surname:'surname'
+    }
+}
 
-
-export default UserCard
+export  {UserCard}

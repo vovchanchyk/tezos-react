@@ -1,14 +1,23 @@
 import React from 'react';
-import './teammate.scss';
+import styles from './Teammate.module.scss';
+import PropTypes from "prop-types";
 
-const Teammate = (props) => {
+const Teammate = ({name,position,img}) => {
     return (
-        <div className ="teammate">
-        <img src={props.img} alt={`${props.name} pic`} className="teammate__picture" />
-        <span className ="teammate__name">{props.name}</span>
-        <span className ="teammate__position">{props.position}</span>
+        <div className ={styles.teammate}>
+        <img src={img} alt={`${name} pic`} className={styles.teammate__picture} />
+        <span className ={styles.teammate__name}>{name}</span>
+        <span className ={styles.teammate__position}>{position}</span>
       </div>
     )
 }
 
-export default Teammate
+Teammate.propTypes = {
+  name:PropTypes.string,
+  position:PropTypes.string
+}
+Teammate.defaultProps = {
+  name:'',
+  position:''
+}
+export {Teammate};

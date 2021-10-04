@@ -1,9 +1,11 @@
 @import './../../styles/index.scss';
+
 .burger {
   width: 50px;
   height: 40px;
   display: block;
   position: relative;
+
   &::before,
   &::after {
     content: "";
@@ -13,6 +15,7 @@
     display: block;
     position: absolute;
     transition: 0.7s;
+    
   }
   &::before {
     top: 0;

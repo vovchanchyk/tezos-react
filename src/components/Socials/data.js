@@ -1,6 +1,7 @@
-import twitter from './__images/twitter.svg';
-import facebook from './__images/facebook.svg';
-import website from './__images/website.svg';
+import twitter from './images/twitter.svg';
+import facebook from './images/facebook.svg';
+import website from './images/website.svg';
+
 const data = [
     { img: twitter, href: "https//twitter.com" },
     { img: facebook, href: "https//facebook.com" },

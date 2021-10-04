@@ -1,5 +1,5 @@
 import React from "react";
-import logo from "./../logo/Dark.svg";
+import logo from "./../../images/logo/Dark.svg";
 import styles from "./Container.module.scss";
 import PropTypes from "prop-types";
 
