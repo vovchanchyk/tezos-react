@@ -1,6 +1,6 @@
 import React from "react";
 
-const UsersIcon = ({color}) => {
+const UsersIcon = ({ color }) => {
   return (
     <svg
       width="116"

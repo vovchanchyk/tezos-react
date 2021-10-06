@@ -2,8 +2,8 @@ import React from "react";
 import data from "./data";
 import styles from "./Strategy.module.scss";
 
-import {Title} from "../../components/Title";
-import {Subsection} from "../../components/Subsection";
+import { Title } from "../../components/Title";
+import { Subsection } from "../../components/Subsection";
 
 const Strategy = () => {
   return (
@@ -39,4 +39,4 @@ const Strategy = () => {
   );
 };
 
-export  {Strategy};
+export { Strategy };

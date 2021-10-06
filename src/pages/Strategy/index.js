@@ -1,1 +1,1 @@
-export {Strategy} from './Strategy';
+export { Strategy } from "./Strategy";

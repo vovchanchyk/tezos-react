@@ -1,11 +1,7 @@
-import React from "react";
+import React, { useState } from "react";
 import styles from "./Header.module.scss";
-import {Nav} from "./../Nav";
-import { useState } from "react";
-import { BurgerBtn }  from "../BurgerBtn";
-
-
-
+import { Nav } from "../Nav";
+import { BurgerBtn } from "../BurgerBtn";
 
 const Header = () => {
   const [showMenu, setShowMenu] = useState(false);
@@ -20,4 +16,4 @@ const Header = () => {
 };
 
 export { Header };
-// 
+//

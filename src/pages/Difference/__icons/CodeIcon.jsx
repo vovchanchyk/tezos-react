@@ -1,6 +1,6 @@
 import React from "react";
 
-const CodeIcon = ({color}) => {
+const CodeIcon = ({ color }) => {
   return (
     <svg
       width="116"

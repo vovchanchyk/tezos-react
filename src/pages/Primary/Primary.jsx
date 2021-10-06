@@ -1,19 +1,18 @@
 import React from "react";
-import styles from  "./Primary.module.scss";
-import {Container} from "./../../components/Container";
-import {Description} from "./../../components/Description";
-import {Socials} from "./../../components/Socials";
-import {Title} from "./../../components/Title";
+import styles from "./Primary.module.scss";
+import { Container } from "../../components/Container";
+import { Description } from "../../components/Description";
+import { Socials } from "../../components/Socials";
+import { Title } from "../../components/Title";
 
 import data from "./data";
 
 const Primary = () => {
-
   const className = {
-    left:styles.primary__left,
-    right:styles.primary__right,
-    img:styles.primary__img
-  }
+    left: styles.primary__left,
+    right: styles.primary__right,
+    img: styles.primary__img,
+  };
 
   return (
     <Container className={className} img={data.img}>
@@ -27,4 +26,4 @@ const Primary = () => {
   );
 };
 
-export {Primary};
+export { Primary };
