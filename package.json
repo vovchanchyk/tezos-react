@@ -62,9 +62,9 @@
     }
   },
   "lint-staged": {
-    "**/*.js": [
-      "npm run lint:fix",
-      "git add"
+    "src/**/*.+(tsx|ts|scss)": [
+      "./node_modules/.bin/eslint - fix",
+      "git add ."
     ]
   }
 }
