@@ -63,7 +63,7 @@
   },
   "lint-staged": {
     "src/**/*.+(tsx|ts|scss)": [
-      "./node_modules/.bin/eslint - fix",
+      "npm run lint:fix",
       "git add ."
     ]
   }
