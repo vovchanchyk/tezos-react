@@ -4,7 +4,7 @@ import styles from "./Container.module.scss";
 import PropTypes from "prop-types";
 
 const Container = ({ className, img, ...props }) => {
-  console.log(className, 'here')
+  console.log(className, 'here ')
 
   return (
     <div className={styles.container}>
