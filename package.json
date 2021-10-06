@@ -58,8 +58,12 @@
   },
   "husky": {
     "hooks": {
-      "pre-commit": "npm lint:fix"
+      "pre-commit": "lint-staged"
     }
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "lint:fix"
+    ]
   }
- 
 }
