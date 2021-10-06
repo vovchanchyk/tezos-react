@@ -4,7 +4,7 @@ import logo from "../../images/logo/Dark.svg";
 import styles from "./Container.module.scss";
 
 const Container = ({ className, img, ...props }) => {
-  console.log(className, 'here');
+  console.log(className, ' here');
 
   return (
     <div className={styles.container}>
