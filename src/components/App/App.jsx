@@ -7,9 +7,9 @@ function App() {
    return (
       <Router>
          <div className="  App">
-            <Header />
-            <Main />
-         </div>
+            <Header / >
+            <Main / >
+         </div >
       </Router>
    );
 }
