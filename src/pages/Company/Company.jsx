@@ -1,7 +1,6 @@
 import React from "react";
 import data from "./data";
 import styles from "./Company.module.scss";
-
 import { Container } from "../../components/Container";
 import { Description } from "../../components/Description";
 import { Socials } from "../../components/Socials";
@@ -13,6 +12,7 @@ const Company = () => {
       right: styles.company__right,
       img: styles.company__img,
    };
+
    return (
       <Container img={data.img} className={className}>
          <Title className={styles.company__title}>{data.title}</Title>
