@@ -59,7 +59,7 @@
     "prettier": "^2.4.1"
   },"lint-staged": {
     "src/**/*.{js,jsx}": [
-        "eslint --fix",
+        "npm run fix",
         "git add ."
     ]
   }
