@@ -15,7 +15,7 @@ const Company = () => {
    };
    return (
       <Container img={data.img} className={className}>
-         <Title className={styles.company__title}>{data.title}</Title>
+         <Title className={styles.company__title}>{data.title}</Title >
          <Description className={styles.company__description}>
             {data.description}
          </Description>
