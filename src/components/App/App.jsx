@@ -6,7 +6,7 @@ import { Header } from "../Header";
 function App() {
    return (
       <Router>
-         <div className="  App">
+         <div className="  App" >
             <Header / >
             <Main / >
          </div>

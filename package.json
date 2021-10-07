@@ -24,8 +24,7 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "lint": "eslint src/**/*.{js,jsx}",
-    "fix": "eslint src/**/*.{js,jsx} --fix",
-    "precommit": "lint-staged"
+    "fix": "eslint src/**/*.{js,jsx} --fix"
   },
   "eslintConfig": {
     "extends": [
@@ -58,11 +57,5 @@
     "husky": "^7.0.2",
     "lint-staged": "^11.2.0",
     "prettier": "^2.4.1"
-  },
-  "husky":{
-    "hooks":{
-      "pre-commit":"npm run fix"
-    }
   }
- 
 }
