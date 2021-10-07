@@ -61,13 +61,8 @@
   },
   "husky":{
     "hooks":{
-      "pre-commit":"lint-staged"
+      "pre-commit":"npm run fix"
     }
-  },
-  "lint-staged": {
-    "src/**/*.{js, jsx}": [
-      "npm run fix",
-      "git add ."
-    ]
   }
+ 
 }
