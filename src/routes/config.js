@@ -1,13 +1,13 @@
-import { Primary } from "../pages/Primary"
-import { Competition } from "../pages/Competition"
-import { Target } from "../pages/Target"
-import { Team } from "../pages/Team"
-import { Mission } from "../pages/Mission"
-import { Home } from "../pages/Home"
-import { Company } from "../pages/Company"
-import { Strategy } from "../pages/Strategy"
-import { Difference } from "../pages/Difference"
-import { Introducing } from "../pages/Introducing"
+import { Primary } from "../pages/Primary";
+import { Competition } from "../pages/Competition";
+import { Target } from "../pages/Target";
+import { Team } from "../pages/Team";
+import { Mission } from "../pages/Mission";
+import { Home } from "../pages/Home";
+import { Company } from "../pages/Company";
+import { Strategy } from "../pages/Strategy";
+import { Difference } from "../pages/Difference";
+import { Introducing } from "../pages/Introducing";
 
 const routes = [
    {
@@ -58,6 +58,6 @@ const routes = [
       path: "/introducing",
       component: Introducing,
    },
-]
+];
 
-export default routes
+export default routes;
