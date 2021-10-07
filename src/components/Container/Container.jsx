@@ -5,7 +5,7 @@ import styles from "./Container.module.scss";
 
 const Container = ({ className, img, ...props }) => (
    <div className={styles.container}>
-      <div className={`${className.left} ${styles.container__left}`}>
+      <div className={`${className.left} ${styles.container__left}`} >
          <img
             src={img}
             alt=" img"
@@ -13,7 +13,7 @@ const Container = ({ className, img, ...props }) => (
          />
       </div>
       <div className={`${className.right} ${styles.container__right}`}>
-         <img src={logo} alt="logo" className={`${styles.container__logo}`} />
+         <img src={logo} alt="logo" className={`${styles.container__logo}`} / >
          {props.children}
       </div>
    </div>
