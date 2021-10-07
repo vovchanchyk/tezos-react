@@ -10,54 +10,54 @@ import { Difference } from "../pages/Difference";
 import { Introducing } from "../pages/Introducing";
 
 const routes = [
-  {
-    path: "/home",
-    component: Home,
-  },
-  {
-    path: "/company",
-    component: Company,
-  },
-  {
-    path: "/team",
-    component: Team,
-  },
-  {
-    path: "/mission",
-    component: Mission,
-  },
-  {
-    path: "/target",
-    component: Target,
-  },
-  {
-    path: "/strategy",
-    component: Strategy,
-  },
-  {
-    path: "/primary",
-    component: Primary,
-  },
-  {
-    path: "/competition",
-    component: Competition,
-  },
-  {
-    path: "/difference-bg",
-    component: Difference,
-  },
-  // {
-  //     path:'/differense-primary',
-  //     component : Difference,
-  // },
-  // {
-  //     path:'/differense-light',
-  //     component : Difference,
-  // },
-  {
-    path: "/introducing",
-    component: Introducing,
-  },
+   {
+      path: "/home",
+      component: Home,
+   },
+   {
+      path: "/company",
+      component: Company,
+   },
+   {
+      path: "/team",
+      component: Team,
+   },
+   {
+      path: "/mission",
+      component: Mission,
+   },
+   {
+      path: "/target",
+      component: Target,
+   },
+   {
+      path: "/strategy",
+      component: Strategy,
+   },
+   {
+      path: "/primary",
+      component: Primary,
+   },
+   {
+      path: "/competition",
+      component: Competition,
+   },
+   {
+      path: "/difference-bg",
+      component: Difference,
+   },
+   // {
+   //     path:'/differense-primary',
+   //     component : Difference,
+   // },
+   // {
+   //     path:'/differense-light',
+   //     component : Difference,
+   // },
+   {
+      path: "/introducing",
+      component: Introducing,
+   },
 ];
 
 export default routes;

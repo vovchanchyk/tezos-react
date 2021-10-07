@@ -3,21 +3,24 @@ import BarIcon from "./__icons/BarIcon";
 import UsersIcon from "./__icons/UsersIcon";
 
 const data = [
-  {
-    title: "Proven team",
-    body: "Founding team with multiple exits.",
-    icon: UsersIcon,
-  },
-  {
-    title: "Market traction",
-    body: "Profitable, growing userbase.",
-    icon: BarIcon,
-  },
-  {
-    title: "Unique tech",
-    body: "Innovative technology.",
-    icon: CodeIcon,
-  },
+   {
+      id: "1",
+      title: "Proven team",
+      body: "Founding team with multiple exits.",
+      icon: UsersIcon,
+   },
+   {
+      id: "2",
+      title: "Market traction",
+      body: "Profitable, growing userbase.",
+      icon: BarIcon,
+   },
+   {
+      id: "3",
+      title: "Unique tech",
+      body: "Innovative technology.",
+      icon: CodeIcon,
+   },
 ];
 
 export default data;
