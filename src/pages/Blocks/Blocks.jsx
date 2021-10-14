@@ -16,12 +16,23 @@ const Blocks = () => {
     { value: 100, label: 100 },
   ];
   const sortOptions = [{ value: 'endorsements', label: 'endoserments' }];
-  const { limit, handleLimit, totalCount } = useContext(BlocksContext);
+  const networkOptions = [{ value: 'mainnet', label: 'mainnet' }];
+  const { limit, handleLimit, totalCount, handlerNetwork, network } =
+    useContext(BlocksContext);
 
   return (
     <div className={styles.blocks}>
       <Title className={styles.blocks__title}>Blocks list</Title>
       <div className={styles.blocks__options}>
+        <div className={styles.blocks__option}>
+          <span className={styles.blocks__subtitle}>network is {network}</span>
+          <Select
+            className={styles.blocks__select}
+            defaultValue={networkOptions[0]}
+            options={networkOptions}
+            onChange={(e) => handlerNetwork(e.value)}
+          />
+        </div>
         <div className={styles.blocks__option}>
           <span className={styles.blocks__subtitle}>
             {limit} items per page

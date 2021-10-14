@@ -7,9 +7,8 @@
   @include padding-horizontal(768px, 20px);
   display: grid;
   grid-row-gap: 30px;
-  &__select{
-    width: 260px;
-  }
+  padding-bottom: 180px;
+
  
 
   &__title{
@@ -19,7 +18,7 @@
   }
   }
   &__subtitle{
-  font-size: $f-size-4;
+  font-size: 16px;
   line-height: $f-height-4;
   font-family: $f-family;
   color: $f-color;
@@ -41,15 +40,9 @@
   }
   &__options{
     display: grid;
-    grid-auto-flow: column;
+    width: 100%;
+    grid-template-columns: repeat(auto-fill, 270px);
     justify-content: flex-start;
     grid-gap: 1.5rem;
-    width: fit-content;
-  @include media(768px){
-    grid-auto-flow: row;
-}
-  }
-  &__option{
-    width: fit-content;
   }
 }

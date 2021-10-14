@@ -15,19 +15,19 @@ function App() {
   const [blocks, blocksDispatch] = useReducer(getBlocksReduser, []);
   const [pages, setPages] = useState(0);
   const [totalCount, setTotalCount] = useState(0);
+  const [network, setNetwork] = useState('mainnet');
   const [offset, setOffset] = useState(0);
   const [limit, setLimit] = useState(10);
   const handlerOffset = (num) => {
     setOffset(num);
   };
-
   const handleLimit = (num) => {
     setLimit(num);
     setOffset(() => 0);
   };
 
   useEffect(async () => {
-    const response = await getBlocksData(offset, limit);
+    const response = await getBlocksData(network, offset, limit);
     const handledBlocks = dataHandler(response.blocks);
     setTotalCount(response.totalCount);
     const nextPages = Math.ceil(totalCount / limit);
@@ -46,6 +46,8 @@ function App() {
     limit,
     pages,
     totalCount,
+    handlerNetwork: (networkOption) => setNetwork(networkOption),
+    network,
   };
   return (
     <BlocksContext.Provider value={contextValue}>
