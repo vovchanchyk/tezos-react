@@ -1,1 +1,1 @@
-export { Primary } from "./Primary";
+export { Primary } from './Primary';

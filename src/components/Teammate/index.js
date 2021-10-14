@@ -1,1 +1,1 @@
-export { Teammate } from "./Teammate";
+export { Teammate } from './Teammate';

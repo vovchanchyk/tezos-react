@@ -1,0 +1,55 @@
+@import './../../styles/index.scss';
+
+.blocks{
+  @include padding-horizontal(1600px, 119px, 119px, min);
+  @include padding-horizontal(1600px,82px);
+  @include padding-horizontal(1200px, 40px);
+  @include padding-horizontal(768px, 20px);
+  display: grid;
+  grid-row-gap: 30px;
+  &__select{
+    width: 260px;
+  }
+ 
+
+  &__title{
+    font-size: $f-size-2;
+     @include media(1200px){
+      text-align: center;
+  }
+  }
+  &__subtitle{
+  font-size: $f-size-4;
+  line-height: $f-height-4;
+  font-family: $f-family;
+  color: $f-color;
+  }
+  &__table{
+    border: solid 0.3px $f-color;
+    padding: 10px;
+    overflow: scroll;
+    overflow: scroll;
+    &::-webkit-scrollbar {
+      height: 17px;
+      width: 5px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $f-color;
+      border: solid $f-color;
+      border-radius: 15px;
+    }
+  }
+  &__options{
+    display: grid;
+    grid-auto-flow: column;
+    justify-content: flex-start;
+    grid-gap: 1.5rem;
+    width: fit-content;
+  @include media(768px){
+    grid-auto-flow: row;
+}
+  }
+  &__option{
+    width: fit-content;
+  }
+}

@@ -1,0 +1,42 @@
+@import './../../styles/index.scss';
+.pagination{
+    
+    display: grid;
+    grid-template-columns: repeat(6, auto);
+    width: fit-content;
+    button{    
+        font-size: 16px;
+        border-radius: 5px;
+        margin: 0 7px;
+        padding: 3px;
+        &::before{
+            content: '';
+            display: block;        
+        }
+    }
+    .prev{
+        color: $f-color;
+        background-color: #fff;
+        &::before{
+            border: 10px solid transparent; 
+            border-right: 18px solid $f-color;
+            z-index: 2;
+            transform: translate(-50%);
+        }
+    }
+    .next{
+        color: $f-color;
+        background-color: #fff;
+       &::before{
+            border: 10px solid transparent; 
+            border-left: 18px solid $f-color;
+            z-index: 2;
+            transform: translate(50%);
+       }
+    }
+    .active{
+        background-color: $f-color;
+        color: #fff;
+    }
+
+}

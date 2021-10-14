@@ -1,1 +1,1 @@
-export { Target } from "./Target";
+export { Target } from './Target';

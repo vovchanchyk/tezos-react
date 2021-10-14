@@ -1,0 +1,14 @@
+@import './../../styles/index.scss';
+.table{
+  font-size: $f-size-4;
+  line-height: $f-height-4;
+  font-family: $f-family;
+  color: $f-color;
+  width: 100%;
+  display: grid;
+  &__cell{
+    border: solid 0.3px $f-color;
+    padding: 5px;
+
+  }
+}

@@ -1,1 +1,1 @@
-export { Competition } from "./Competition";
+export { Competition } from './Competition';
