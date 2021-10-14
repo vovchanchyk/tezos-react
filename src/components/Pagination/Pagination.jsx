@@ -2,7 +2,7 @@
 
 import React, { useContext } from 'react';
 import styles from './Pagination.module.scss';
-import { BlocksContext } from '../App/App';
+import { BlocksContext } from '../Provider';
 import { PaginationButton } from '../PaginationButton';
 import { pagesDataCreator } from '../../functions/pagesDataCreator';
 

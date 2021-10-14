@@ -1,63 +1,19 @@
-/* eslint-disable no-console */
-import React, { createContext, useEffect, useReducer } from 'react';
+import React from 'react';
 import { HashRouter as Router } from 'react-router-dom';
-import { useState } from 'react/cjs/react.development';
 import { Main } from '../Main';
 import { Header } from '../Header';
-import { getBlocksReduser } from '../../store/getBlocksReduser';
-import { getBlocksData } from '../../api';
-import { GETBLOCKS } from '../../store/types';
-import { dataHandler } from '../../functions/dataHandler';
-
-export const BlocksContext = createContext();
+import { Provider } from '../Provider';
 
 function App() {
-  const [blocks, blocksDispatch] = useReducer(getBlocksReduser, []);
-  const [pages, setPages] = useState(0);
-  const [totalCount, setTotalCount] = useState(0);
-  const [network, setNetwork] = useState('mainnet');
-  const [offset, setOffset] = useState(0);
-  const [limit, setLimit] = useState(10);
-  const handlerOffset = (num) => {
-    setOffset(num);
-  };
-  const handleLimit = (num) => {
-    setLimit(num);
-    setOffset(() => 0);
-  };
-
-  useEffect(async () => {
-    const response = await getBlocksData(network, offset, limit);
-    const handledBlocks = dataHandler(response.blocks);
-    setTotalCount(response.totalCount);
-    const nextPages = Math.ceil(totalCount / limit);
-    setPages(nextPages);
-    blocksDispatch({
-      type: GETBLOCKS,
-      blocks: handledBlocks,
-    });
-  }, [offset, limit]);
-
-  const contextValue = {
-    blocks,
-    offset,
-    handlerOffset,
-    handleLimit,
-    limit,
-    pages,
-    totalCount,
-    handlerNetwork: (networkOption) => setNetwork(networkOption),
-    network,
-  };
   return (
-    <BlocksContext.Provider value={contextValue}>
+    <Provider>
       <Router>
         <div className='App'>
           <Header />
           <Main />
         </div>
       </Router>
-    </BlocksContext.Provider>
+    </Provider>
   );
 }
 export { App };

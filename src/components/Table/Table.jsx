@@ -1,7 +1,7 @@
 /* eslint-disable no-console */
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { BlocksContext } from '../App/App';
+import { BlocksContext } from '../Provider';
 import { rowCreator } from '../../functions/rowCreator';
 import { titlesCreator } from '../../functions/titlesCreator';
 import styles from './Table.module.scss';

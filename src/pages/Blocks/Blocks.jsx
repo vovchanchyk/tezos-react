@@ -1,9 +1,9 @@
 import React, { useContext, useState } from 'react';
 import Select from 'react-select';
 import { Pagination } from '../../components/Pagination';
+import { BlocksContext } from '../../components/Provider';
 import { Table } from '../../components/Table';
 import { Title } from '../../components/Title';
-import { BlocksContext } from '../../components/App/App';
 import styles from './Blocks.module.scss';
 
 const Blocks = () => {
@@ -53,7 +53,6 @@ const Blocks = () => {
           />
         </div>
       </div>
-
       <div className={styles.blocks__pagination}>
         <Pagination />
       </div>

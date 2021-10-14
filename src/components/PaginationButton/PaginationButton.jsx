@@ -1,7 +1,7 @@
 import './PaginationButton.scss';
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
-import { BlocksContext } from '../App/App';
+import { BlocksContext } from '../Provider';
 
 const PaginationButton = ({ pageNumber, pageOffset, active }) => {
   const { handlerOffset } = useContext(BlocksContext);
