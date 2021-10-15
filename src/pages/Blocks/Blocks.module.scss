@@ -8,20 +8,18 @@
   display: grid;
   grid-row-gap: 30px;
   padding-bottom: 180px;
-
- 
-
   &__title{
     font-size: $f-size-2;
      @include media(1200px){
       text-align: center;
   }
   }
-  &__subtitle{
+  span{
   font-size: 16px;
   line-height: $f-height-4;
   font-family: $f-family;
   color: $f-color;
+ 
   }
   &__table{
     border: solid 0.3px $f-color;

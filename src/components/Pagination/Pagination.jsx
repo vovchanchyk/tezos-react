@@ -9,11 +9,11 @@ import { pagesDataCreator } from '../../functions/pagesDataCreator';
 const Pagination = () => {
   const { offset, limit, pages, handlerOffset } = useContext(BlocksContext);
   const currentPages = pagesDataCreator(offset, limit, pages);
-  const handlePage = (num) => {
-    if (offset === 0 && num < offset) return;
+  const handlePage = (val) => {
+    if (offset === 0 && val < offset) return;
     if (currentPages[currentPages.length - 1].pageNumber === pages && pages)
       return;
-    handlerOffset(num);
+    handlerOffset(val);
   };
   return (
     <div className={styles.pagination}>

@@ -1,57 +1,38 @@
 import React, { useContext, useState } from 'react';
-import Select from 'react-select';
+import { SelectComponent } from '../../components/SelectComponent';
 import { Pagination } from '../../components/Pagination';
 import { BlocksContext } from '../../components/Provider';
 import { Table } from '../../components/Table';
 import { Title } from '../../components/Title';
 import styles from './Blocks.module.scss';
+import { networkOptions, limitOptions, sortOptions } from '../../options/index';
 
 const Blocks = () => {
   const [sort, setSort] = useState('');
-  const options = [
-    { value: 10, label: 10 },
-    { value: 30, label: 30 },
-    { value: 50, label: 50 },
-    { value: 70, label: 70 },
-    { value: 100, label: 100 },
-  ];
-  const sortOptions = [{ value: 'endorsements', label: 'endoserments' }];
-  const networkOptions = [{ value: 'mainnet', label: 'mainnet' }];
-  const { limit, handleLimit, totalCount, handlerNetwork, network } =
-    useContext(BlocksContext);
+  const sortHandler = (val) => setSort(val);
+  const { handleLimit, totalCount, handlerNetwork } = useContext(BlocksContext);
 
   return (
     <div className={styles.blocks}>
       <Title className={styles.blocks__title}>Blocks list</Title>
       <div className={styles.blocks__options}>
-        <div className={styles.blocks__option}>
-          <span className={styles.blocks__subtitle}>network is {network}</span>
-          <Select
-            className={styles.blocks__select}
-            defaultValue={networkOptions[0]}
-            options={networkOptions}
-            onChange={(e) => handlerNetwork(e.value)}
-          />
-        </div>
-        <div className={styles.blocks__option}>
-          <span className={styles.blocks__subtitle}>
-            {limit} items per page
-          </span>
-          <Select
-            defaultValue={options[0]}
-            className={styles.blocks__select}
-            options={options}
-            onChange={(e) => handleLimit(e.value)}
-          />
-        </div>
-        <div className={styles.blocks__option}>
-          <span className={styles.blocks__subtitle}>sort by {sort}</span>
-          <Select
-            className={styles.blocks__select}
-            options={sortOptions}
-            onChange={(e) => setSort(e.value)}
-          />
-        </div>
+        <SelectComponent
+          title='limit'
+          defaultValue={limitOptions[0]}
+          options={limitOptions}
+          handler={handleLimit}
+        />
+        <SelectComponent
+          title='network'
+          defaultValue={networkOptions[0]}
+          options={networkOptions}
+          handler={handlerNetwork}
+        />
+        <SelectComponent
+          title='sort by'
+          options={sortOptions}
+          handler={sortHandler}
+        />
       </div>
       <div className={styles.blocks__pagination}>
         <Pagination />

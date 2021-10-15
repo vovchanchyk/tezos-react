@@ -14,8 +14,8 @@ const Provider = ({ children }) => {
   const [offset, setOffset] = useState(0);
   const [limit, setLimit] = useState(10);
 
-  const handleLimit = (num) => {
-    setLimit(num);
+  const handleLimit = (val) => {
+    setLimit(val);
     setOffset(() => 0);
   };
 
@@ -29,12 +29,12 @@ const Provider = ({ children }) => {
       type: GETBLOCKS,
       blocks: handledBlocks,
     });
-  }, [offset, limit]);
+  }, [offset, limit, network]);
 
   const contextValue = {
     blocks,
     offset,
-    handlerOffset: (num) => setOffset(num),
+    handlerOffset: (val) => setOffset(val),
     handleLimit,
     limit,
     pages,
