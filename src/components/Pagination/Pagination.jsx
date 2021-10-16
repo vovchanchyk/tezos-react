@@ -1,7 +1,6 @@
 import React, { useContext } from 'react';
 import styles from './Pagination.module.scss';
 import { BlocksContext } from '../Provider';
-import { PaginationButton } from './PaginationButton';
 import { pagesDataCreator } from '../../functions/pagesDataCreator';
 
 const Pagination = () => {
@@ -15,6 +14,7 @@ const Pagination = () => {
       return;
     handlerOffset(val);
   };
+
   return (
     <div className={styles.pagination}>
       <button
@@ -24,13 +24,15 @@ const Pagination = () => {
         onClick={() => handlePage(offset - limit)}
       />
       {currentPages.map((el) => (
-        <PaginationButton
-          className={styles.active}
-          key={el.pageNumber}
-          pageNumber={el.pageNumber}
-          active={el.active}
-          pageOffset={el.pageOffset}
-        />
+        <button
+          type='button'
+          aria-label={`button ${el.pageNumber}  page`}
+          className={el.active ? styles.active : ''}
+          onClick={() => handlePage(el.pageOffset)}
+          name={el.pageNumber}
+        >
+          {el.pageNumber}
+        </button>
       ))}
       <button
         type='button'
