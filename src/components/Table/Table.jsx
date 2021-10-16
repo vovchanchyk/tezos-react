@@ -1,4 +1,3 @@
-/* eslint-disable no-console */
 import React, { useContext } from 'react';
 import PropTypes from 'prop-types';
 import { BlocksContext } from '../Provider';
@@ -31,14 +30,17 @@ const Table = ({ sort }) => {
         </thead>
         <tbody className='table__body'>
           {rows.map((row) => {
-            const [id] = row;
+            const [rowkey] = row;
             return (
-              <tr key={id} className='table__row'>
-                {row.map((cell) => (
-                  <td className={styles.table__cell} key={id + cell}>
-                    {cell || '_____'}
-                  </td>
-                ))}
+              <tr key={rowkey} className='table__row'>
+                {row.map((cell, i) => {
+                  const cellkey = `${cell} ${i}`;
+                  return (
+                    <td className={styles.table__cell} key={cellkey}>
+                      {cell || '_____'}
+                    </td>
+                  );
+                })}
               </tr>
             );
           })}

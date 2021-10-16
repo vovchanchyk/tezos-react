@@ -1,13 +1,13 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-
 import React, { useContext } from 'react';
 import styles from './Pagination.module.scss';
 import { BlocksContext } from '../Provider';
-import { PaginationButton } from '../PaginationButton';
+import { PaginationButton } from './PaginationButton';
 import { pagesDataCreator } from '../../functions/pagesDataCreator';
 
 const Pagination = () => {
-  const { offset, limit, pages, handlerOffset } = useContext(BlocksContext);
+  const { offset, limit, totalCount, handlerOffset } =
+    useContext(BlocksContext);
+  const pages = Math.ceil(totalCount / limit);
   const currentPages = pagesDataCreator(offset, limit, pages);
   const handlePage = (val) => {
     if (offset === 0 && val < offset) return;
@@ -19,11 +19,13 @@ const Pagination = () => {
     <div className={styles.pagination}>
       <button
         type='button'
+        aria-label='button previos page'
         className={styles.prev}
         onClick={() => handlePage(offset - limit)}
       />
       {currentPages.map((el) => (
         <PaginationButton
+          className={styles.active}
           key={el.pageNumber}
           pageNumber={el.pageNumber}
           active={el.active}
@@ -32,6 +34,7 @@ const Pagination = () => {
       ))}
       <button
         type='button'
+        aria-label='button next page'
         className={styles.next}
         onClick={() => handlePage(offset + limit)}
       />
