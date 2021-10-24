@@ -25,6 +25,7 @@ const Pagination = () => {
       />
       {currentPages.map((el) => (
         <button
+          key={`key-${el.pageNumber}`}
           type='button'
           aria-label={`button ${el.pageNumber}  page`}
           className={el.active ? styles.active : ''}

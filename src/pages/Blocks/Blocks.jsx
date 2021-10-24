@@ -11,7 +11,6 @@ const Blocks = () => {
   const [sort, setSort] = useState('');
   const sortHandler = (val) => setSort(val);
   const { handleLimit, totalCount, handlerNetwork } = useContext(BlocksContext);
-
   return (
     <div className={styles.blocks}>
       <Title className={styles.blocks__title}>Blocks list</Title>
